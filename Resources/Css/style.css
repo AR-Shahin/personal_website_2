@@ -281,6 +281,7 @@ nav span{
     height: 60px;
     margin: 0 10px;
 }
+
 #contact-section ul li span{
     position: absolute;
     top: 0;
@@ -567,8 +568,6 @@ textarea{
         margin: 0 35px 0 45px;
     }
 }
-
-
 footer{
     padding: 20px 0;
     background: #2f3640;
@@ -582,9 +581,11 @@ footer{
     position: fixed;
     right: 2%;
     bottom: 2%;
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    transition: .6s;
+    border-radius: 2px;
 }
 .scroll-top a{
     color: #fff;

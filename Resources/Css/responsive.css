@@ -63,3 +63,36 @@
         display: none;
     }
 }
+
+@media (min-width:380px) and (max-width:575px){
+    h3{
+        font-size: 30px;
+    }
+    section{
+        padding: 35px 0;
+    }
+    #about-section{
+        text-align: center;
+    }
+      #contact-section ul{
+        transform: rotate(0deg);
+         width: 90%;
+         margin: 0 auto;
+        margin-top: 35px;
+    }
+      #contact-section ul li::before{
+        display: none;
+    }
+    #contact-section ul li::after{
+        display: none;
+    }
+     #contact-section ul li{
+        border: 1.5px solid rgba(245, 246, 250, 0.63);
+    }
+    .my-form{
+        margin-top: 30px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    
+}
