@@ -6,7 +6,7 @@ $(document).ready(function(){
     // use outer width of grid-sizer for columnWidth
     columnWidth: '.grid-sizer'
   }
-})
+});
     
     
 $('.btn-group').on( 'click', 'button', function() {

@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="Resources/Css/magnific-popup.css">
       <!-- fontAwesome -->
       <link rel="stylesheet" href="Resources/Fonts/css/all.min.css">
-      <link rel="stylesheet" href="Resources/Css/owl.carousel.min.css">
+      <link rel="stylesheet" href="Resources/Css/animated-headline.css">
       <link rel="stylesheet" href="Resources/Css/style.css">
       <link rel="stylesheet" href="Resources/Css/responsive.css">
       <title>Shahin | Portfolio Website</title>
@@ -57,10 +57,8 @@
                      <div class="col-12 col-md-7">
                         <div class="hero-text">
                            <span>Hello,I'm</span>
-                           <h2><b>Anisur Rahman Shahin</b></h2>
-                           <div class="type-js-plugin">
-                              <h5><i><span class="type"></span></i></h5>
-                           </div>
+                           <h2>Anisur Rahman Shahin</h2>
+                            <h6 style="font-size: 18px;m-0;p-0"><i>Web Designer</i></h6>
                            <div class="hero-social-media">
                               <ul>
                                  <li><a href="https://www.facebook.com/sha.hin.9619934" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -81,7 +79,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-12 col-md-6 mb-3 col-lg-6 align-self-center">
-                    <div class="my-carousel owl-carousel">
+                   <!--   <div class="my-carousel owl-carousel">
                         <div class="img-box">
                             <img src="Resources/Images/img.jpg" alt="" class="img-fluid">
                         </div>
@@ -94,7 +92,33 @@
                         <div class="img-box">
                             <img src="Resources/Images/img3.JPG" alt="" class="img-fluid">
                         </div>                 
-                    </div> <!-- main carousel -->
+                    </div> --><!-- main carousel -->
+                    
+                    <div class="shahin-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block img-fluid" src="Resources/Images/img.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="Resources/Images/img2.JPG" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="Resources/Images/img3.JPG" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="Resources/Images/IMG_9340.JPG" alt="Third slide">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    </div>
                   </div>
                   <div class="col-12 col-md-6 mb-3 col-lg-6 ">
                      <div class="about-me-description">
@@ -479,11 +503,13 @@
                 </div>
              </div>
          </footer>
+         
+         
          <div class="scroll-top"><a href="#home"><i class="fas fa-angle-double-up"></i></a></div>
       </div>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
       <!-- plugin -->
@@ -491,7 +517,8 @@
       <script src ="Resources/js/isotop.js"></script>
       <script src ="Resources/js/mixitup.min.js"></script>
       <script src="Resources/js/jquery.magnific-popup.min.js"></script>
-      <script src="Resources/js/owl.carousel.min.js"></script> 
+      <script src="Resources/js/animated-headline.js"></script> 
+      
       <script src="Resources/Js/main.js"></script>
       <script>
        $('.scroll-top').click(function(){
@@ -510,6 +537,10 @@
             $('.scroll-top').show();
            ;
         }
-    });</script>
+    });
+       $('.carousel').carousel({
+      interval: 2000
+    })
+           </script>
    </body>
 </html>
