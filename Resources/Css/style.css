@@ -593,4 +593,23 @@ footer{
     color: #fff;
 }
 
+/*```````````````````````````````````CAROUSEL--------------------------------------------------*/
 
+.carousel-indicators li{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.72);
+    margin-right: 15px;
+}
+.carousel-indicators li.active{
+    background: #00b894;
+}
+h6.cd-headline.letters.rotate-2{
+    text-align: left;
+    margin: 0;
+}
+.tagline h6 b{
+    font-size: 25px;
+    margin-left: -5px;
+}
