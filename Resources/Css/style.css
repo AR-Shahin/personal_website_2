@@ -54,6 +54,7 @@ h4{
     font-weight: 500;
     margin: 15px 0;
     color: #fff;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 h3::before{
@@ -71,6 +72,7 @@ h3::before{
     background: transparent;
     border: 2px solid #009688;
     border-radius: 0;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 .card-body{
@@ -120,6 +122,7 @@ header .my-nav{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
+    -webkit-transition: .6s;
     transition: .6s;
     /*color: #2196F3;*/
     padding-bottom: 10px;
@@ -152,6 +155,8 @@ nav span{
     margin-top: 30px;
 }
 .hero-social-media ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .hero-social-media ul li {
@@ -159,11 +164,18 @@ nav span{
     background: #55E6C1;
     height: 40px;
     width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
      color: #2d3436;
     border: 1.5px solid transparent;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 
@@ -223,9 +235,16 @@ nav span{
     border-radius:50%;
     border: 1.5px solid #2196F3;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 #service-section .card .icon-box i{
@@ -257,6 +276,7 @@ nav span{
 }
 #programming-code-section .btn-link{
     text-transform: capitalize;
+    -webkit-transition: .6s;
     transition: .6s;
     text-decoration: none;
     
@@ -272,9 +292,13 @@ nav span{
 }
 #contact-section ul {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    transform-style: preserve-3d;
-    transform: rotate(-25deg) skew(25deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotate(-25deg) skew(25deg);
+            transform: rotate(-25deg) skew(25deg);
 }
 #contact-section ul li{
     position: relative;
@@ -290,42 +314,54 @@ nav span{
     left: 0;
     width: 100%;
     height: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #333;
     color: rgba(225,225,225,.2);
     font-size: 20px !important;
 }
 #contact-section ul li:hover span{
     z-index: 1000;
+    -webkit-transition: .5s;
     transition: .5s;
     color: #fff;
     box-shadow: -1px 1px 1px rgba(0,0,0,.5);
 }
 #contact-section ul li:hover span:nth-child(5)
 {
-    transform: translate(40px,-40px);
+    -webkit-transform: translate(40px,-40px);
+            transform: translate(40px,-40px);
     opacity: 1;
 }
 #contact-section ul li:hover span:nth-child(4)
 {
-    transform: translate(30px,-30px);
+    -webkit-transform: translate(30px,-30px);
+            transform: translate(30px,-30px);
     opacity: .8;
 }
 #contact-section ul li:hover span:nth-child(3)
 {
-    transform: translate(20px,-20px);
+    -webkit-transform: translate(20px,-20px);
+            transform: translate(20px,-20px);
     opacity: .6;
 }
 #contact-section ul li:hover span:nth-child(2)
 {
-    transform: translate(10px,-10px);
+    -webkit-transform: translate(10px,-10px);
+            transform: translate(10px,-10px);
     opacity: .4;
 }
 #contact-section ul li:hover span:nth-child(1)
 {
-    transform: translate(0px,-0px);
+    -webkit-transform: translate(0px,-0px);
+            transform: translate(0px,-0px);
     opacity: .2;
 }
 #contact-section ul li::before{
@@ -336,8 +372,10 @@ nav span{
     width: 100%;
     height: 10px;
     background: #2a2a2a;
-    transform-origin: top;
-    transform: skewX(-41deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: skewX(-41deg);
+            transform: skewX(-41deg);
 }
 #contact-section ul li::after{
     content: '';
@@ -347,8 +385,10 @@ nav span{
     width: 9px;
     height: 100%;
     background: #2a2a2a;
-    transform-origin: right;
-    transform: skewY(-41deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: skewY(-41deg);
+            transform: skewY(-41deg);
 }
 #contact-section ul li:nth-child(1):hover span{
     background: #3b5999;
@@ -392,6 +432,7 @@ textarea{
     border-radius: 2px;
     color: #fff;
     border-color:  #2196F3;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 .my-form .btn-form:hover{
@@ -583,9 +624,16 @@ footer{
     position: fixed;
     right: 2%;
     bottom: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .6s;
     transition: .6s;
     border-radius: 2px;
 }
